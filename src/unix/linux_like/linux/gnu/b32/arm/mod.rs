@@ -108,6 +108,10 @@ s! {
         __f_spare: [::c_int; 6],
     }
 
+    pub struct user_regs {
+        pub uregs: [::c_ulong; 18],
+    }
+
     pub struct shmid_ds {
         pub shm_perm: ::ipc_perm,
         pub shm_segsz: ::size_t,

@@ -46,6 +46,10 @@ s! {
         pub st_ino: ::ino_t,
     }
 
+    pub struct user_regs {
+        pub uregs: [::c_ulong; 18],
+    }
+
     pub struct stack_t {
         pub ss_sp: *mut ::c_void,
         pub ss_flags: ::c_int,
